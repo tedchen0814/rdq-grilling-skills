@@ -1,4 +1,4 @@
-# 用法: .\install.ps1 [-Project]   預設裝到 ~\.claude\skills，-Project 裝到 .\.claude\skills
+﻿# 用法: .\install.ps1 [-Project]   預設裝到 ~\.claude\skills，-Project 裝到 .\.claude\skills
 param([switch]$Project)
 $ErrorActionPreference = 'Stop'
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
