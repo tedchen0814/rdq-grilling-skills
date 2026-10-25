@@ -1,0 +1,7 @@
+MIT License
+
+本 repo 打包的兩個 skill 皆為 MIT 授權：
+- skills/rdq        Copyright (c) 2026 mathruffian-dot（授權全文見 skills/rdq/LICENSE）
+- skills/grilling   Copyright (c) Matt Pocock，來源 https://github.com/mattpocock/skills （skills/productivity/grilling）
+
+安裝腳本（install.sh / install.ps1）以 MIT 釋出，可自由使用。
