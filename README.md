@@ -19,12 +19,7 @@ git clone https://github.com/tedchen0814/rdq-grilling-skills.git ; cd rdq-grilli
 git clone https://github.com/tedchen0814/rdq-grilling-skills.git && cd rdq-grilling-skills && ./install.sh
 ```
 
-預設安裝到 `~/.claude/skills/`（全域）。**全域的 skill 會在每個專案的每個對話開頭載入名稱與說明，占用上下文**；只在特定專案用的話，建議裝在專案層：
-
-- 目前資料夾：`-Project`（PowerShell）或 `--project`（bash）
-- 指定專案資料夾：`-ProjectPath <資料夾>`（PowerShell）或 `--project <資料夾>`（bash）
-
-專案層的 skill 只有在該專案資料夾開啟 Claude Code 時才會載入；專案若是公開 git repo，請把 `.claude/` 加進 `.git/info/exclude`。已經裝成全域的話，把 `rdq`、`grilling` 兩個資料夾搬到專案的 `.claude/skills/` 即可。
+預設安裝到 `~/.claude/skills/`（全域）。只想裝在目前專案，加 `-Project`（PowerShell）或 `--project`（bash）。
 重複執行會覆蓋舊版。安裝後重啟 Claude Code。
 
 ## 使用
