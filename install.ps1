@@ -1,8 +1,7 @@
-﻿# 用法: .\install.ps1 [-Project]   預設裝到 ~\.claude\skills，-Project 裝到 .\.claude\skills
-param([switch]$Project)
+﻿# 用法: .\install.ps1   一律裝到全域 ~\.claude\skills（不提供專案層選項）
 $ErrorActionPreference = 'Stop'
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$dest = if ($Project) { Join-Path (Get-Location) '.claude\skills' } else { Join-Path $HOME '.claude\skills' }
+$dest = Join-Path $HOME '.claude\skills'
 New-Item -ItemType Directory -Force $dest | Out-Null
 foreach ($s in 'rdq', 'grilling') {
   $target = Join-Path $dest $s

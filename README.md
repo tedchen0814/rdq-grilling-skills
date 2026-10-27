@@ -19,7 +19,7 @@ git clone https://github.com/tedchen0814/rdq-grilling-skills.git ; cd rdq-grilli
 git clone https://github.com/tedchen0814/rdq-grilling-skills.git && cd rdq-grilling-skills && ./install.sh
 ```
 
-預設安裝到 `~/.claude/skills/`（全域）。只想裝在目前專案，加 `-Project`（PowerShell）或 `--project`（bash）。
+一律安裝到 `~/.claude/skills/`（全域），腳本不提供專案層選項，也不接受參數。
 重複執行會覆蓋舊版。安裝後重啟 Claude Code。
 
 ## 使用
